@@ -5,6 +5,7 @@ import colors from '../../styles/colors';
 import { Welcome } from '../pages/welcome';
 import { Confirmation } from '../pages/Confirmation';
 import { UserIdentification } from '../pages/UserIdentification';
+import { PlantSelect } from '../pages/PlantSelect';
 
 const stackRoutes = createStackNavigator();
 
@@ -15,8 +16,8 @@ const AppRoutes: React.FC = () => (
     < stackRoutes.Navigator
 
         headerMode="none"
-        screenOptions = {{
-            cardStyle:{
+        screenOptions={{
+            cardStyle: {
                 backgroundColor: colors.white
             },
         }}
@@ -39,6 +40,15 @@ const AppRoutes: React.FC = () => (
             name='Confirmation'
             component={Confirmation}
         />
+
+        <stackRoutes.Screen
+
+            name='PlantSelect'
+            component={PlantSelect}
+        />
+
+
+    
 
     </stackRoutes.Navigator>
 )
