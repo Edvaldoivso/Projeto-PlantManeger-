@@ -22,6 +22,8 @@ export function Header(){
             </View>
             <Image source = {ReiJulian} style={styles.image}/>
         </View>
+
+      
     )
 }
 
