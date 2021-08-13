@@ -1,0 +1,14 @@
+{
+    "id":1,
+    "name":"Peperomia",
+    "about":"Planta teste para o server",
+    "water":"Regar quando quiser",
+    "photo":"Nao fiz a foto",
+    "eviroments":["bedromm"],
+    "frequency":{
+        "times":3,
+        "repeat_every":"week"
+    }
+    
+
+}

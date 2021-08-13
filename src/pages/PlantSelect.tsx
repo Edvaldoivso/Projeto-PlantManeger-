@@ -2,7 +2,8 @@ import React from 'react';
 import {
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    FlatList
 
 } from 'react-native';
 
@@ -30,8 +31,25 @@ export function PlantSelect() {
 
 
             </View>
+            <View>
 
-            <EnviromentButton title='Cozinha'/>
+
+                <FlatList
+                    data={[1, 2, 3, 4, 5,6,7]}
+
+                    renderItem={(item) =>
+                        <EnviromentButton
+                            title='Cozinha'
+                            active
+                        />
+                    }
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.enviromentList}
+                />
+
+            </View>
+
         </View>
 
     )
@@ -61,7 +79,7 @@ const styles = StyleSheet.create({
 
 
     },
-    header:{
-        paddingHorizontal:30
+    header: {
+        paddingHorizontal: 30
     }
 });
