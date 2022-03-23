@@ -9,10 +9,10 @@ import { EnviromentButton } from "../components/EnviromentButton";
 import api from "../services/api";
 import { PlantCardPrimary } from "../components/PlantCardPrimary";
 
-
 interface EnviromentProps {
   Key: string;
   title: string;
+  photo: string;
 }
 
 interface PlantProps {
@@ -68,31 +68,30 @@ export function PlantSelect() {
       <View>
         <FlatList
           data={enviroments}
-          renderItem={({ item }) => (<EnviromentButton title={item.title} />
-          )}
+          renderItem={({ item }) => <EnviromentButton title={item.title} />}
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.enviromentList}
         />
       </View>
 
-      <View style={styles.plants}>
 
+
+
+
+      <View style={styles.plantas}>
         <FlatList
           data={plants}
-          renderItem={({ item }) => (<PlantCardPrimary data={item} />
-          )}
-          
-          //keyExtractor={(item) => item.toString()}
-          showsVerticalScrollIndicator={false}
+          renderItem={({ item }) => <PlantCardPrimary data={ item } />}
           numColumns={2}
+          showsVerticalScrollIndicator={false}
         />
-
       </View>
-
     </View>
-  )
+  );
 }
+
+
 
 const styles = StyleSheet.create({
   container: {
@@ -118,15 +117,16 @@ const styles = StyleSheet.create({
 
   enviromentList: {
     height: 40,
-    justifyContent: "center",
     paddingBottom: 5,
     marginRight: 32,
     marginVertical: 32,
   },
 
-  plants: {
+  plantas: {
+    
     flex: 1,
-    paddingHorizontal: "center",
-    justifyContent: "center",
+    paddingHorizontal:32,
+    justifyContent:"center"
+   
   },
 });

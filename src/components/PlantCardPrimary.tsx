@@ -12,29 +12,32 @@ interface PlantProps extends RectButtonProps {
   };
 }
 
-export const PlantCardPrimary = ({ data, ...rest }: PlantProps) => {
+export const PlantCardPrimary = ({ data, ...rest } : PlantProps) => {
   return (
-    <RectButton style ={ styles.container } {...rest}>
+    <RectButton  
+    style = { styles.container }  {...rest}>
+   
+  <SvgFromUri
+    uri = { data.photo }
+  ></SvgFromUri>
 
-    <SvgFromUri 
 
-    uri={ data.photo }
-    width={70} 
-    height={70}
-
-    />
-
-      <Text style={ styles.text }>
+      <Text style={ styles.text }>      
       { data.name }
       </Text>
     </RectButton>
   );
 };
 
+
+
+
+
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    maxWidth: "45",
+    maxWidth: 200,
     backgroundColor: colors.shape,
     borderRadius: 20,
     paddingVertical: 10,
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
   },
 
   text: {
-     color: colors.green_dark,
+
      fontFamily:fonts.heading, 
      marginVertical:16,
   },
