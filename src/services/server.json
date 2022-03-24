@@ -8,8 +8,8 @@
     {"key": "living_room", "title": "Sala"},
     {"key": "bedroom", "title": "Quarto"},
     {"key": "kitchen", "title": "Cozinha"},
-    {"key": "bathroom", "title": "Banheiro"},
-    {"key": "food_court", "title": "Table"}
+    {"key": "bathroom", "title": "Banheiro"}
+    
 
     
   ],
@@ -21,7 +21,7 @@
       "about": "É uma espécie tropical que tem crescimento rápido e fácil manuseio.",
       "water_tips": "Mantenha a terra sempre húmida sem encharcar. Regue 2 vezes na semana.",
       "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/1.svg",
-      "environments": ["living_room", "kitchen"],
+      "environments": ["living_room", "kitchen ", "food_court"],
       "frequency": {
         "times": 2,
         "repeat_every": "week"
@@ -69,7 +69,7 @@
       "about": "O aroma reduz os níveis de ansiedade e seu cheiro ajudar na qualidade do sono e a produtividade durante o dia.",
       "water_tips": "Regue o solo ao redor. Regue 1 vez no dia.",
       "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/5.svg",
-      "environments": ["bedroom", "living_room"],
+      "environments": ["bedroom", "living_room","food_court"],
       "frequency": {
         "times": 1,
         "repeat_every": "day"
