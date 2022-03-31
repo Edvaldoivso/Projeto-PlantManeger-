@@ -1,17 +1,14 @@
 {
   "plants_water_frequencies": [
-    {"key": "day", "title": "Todos os dias"},
-    {"key": "week", "title": "A cada semana"}
+    { "key": "day", "title": "Todos os dias" },
+    { "key": "week", "title": "A cada semana" }
   ],
 
   "plants_environments": [
-    {"key": "living_room", "title": "Sala"},
-    {"key": "bedroom", "title": "Quarto"},
-    {"key": "kitchen", "title": "Cozinha"},
-    {"key": "bathroom", "title": "Banheiro"}
-    
-
-    
+    { "key": "living_room", "title": "Sala" },
+    { "key": "bedroom", "title": "Quarto" },
+    { "key": "kitchen", "title": "Cozinha" },
+    { "key": "bathroom", "title": "Banheiro" }
   ],
 
   "plants": [
@@ -24,7 +21,7 @@
       "environments": ["living_room", "kitchen ", "food_court"],
       "frequency": {
         "times": 2,
-        "repeat_every": "week"
+        "repeat_every": "weekend"
       }
     },
     {
@@ -69,7 +66,7 @@
       "about": "O aroma reduz os níveis de ansiedade e seu cheiro ajudar na qualidade do sono e a produtividade durante o dia.",
       "water_tips": "Regue o solo ao redor. Regue 1 vez no dia.",
       "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/5.svg",
-      "environments": ["bedroom", "living_room","food_court"],
+      "environments": ["bedroom", "living_room", "food_court"],
       "frequency": {
         "times": 1,
         "repeat_every": "day"
@@ -77,7 +74,7 @@
     },
     {
       "id": 6,
-      "name": "Yucca",
+      "name": "Pacová",
       "about": "São indicadas pois são fáceis de manter e cuidar. Você colocar em pequenos vasos, ou até mesmo em xícaras.",
       "water_tips": "Graças à reserva de água dessas verdinhas, é sempre melhor regar pouco. Regue 1 vez na semana.",
       "photo": "https://storage.googleapis.com/golden-wind/nextlevelweek/05-plantmanager/6.svg",

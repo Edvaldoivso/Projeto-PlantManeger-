@@ -8,6 +8,8 @@ import {
     TextInput,
     KeyboardAvoidingView,
     Platform,
+    Alert
+    
 
 
 
@@ -18,6 +20,7 @@ import { Button } from '../components/Button'
 import colors from '../../styles/colors';
 import fonts from '../../styles/fonts';
 import {useNavigation} from '@react-navigation/core'
+import AsyncStorage  from '@react-native-async-storage/async-storage';
 
 export function UserIdentification() {
     //Função de Estados
@@ -44,8 +47,14 @@ export function UserIdentification() {
 
    
 
-    function handleSubmit() {
+    async function handleSubmit() {
 
+        if(!name || parseFloat(name) )
+
+        return Alert.alert("Diga seu nome antes 😛, sem numeros")
+
+       await AsyncStorage.setItem('@plantmaneger:user',name);
+ 
         navigation.navigate('Confirmation')
     }
 
